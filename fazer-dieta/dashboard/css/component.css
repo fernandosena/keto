@@ -1,0 +1,16 @@
+/*---------------------------------------------
+Some css files are imported here
+--------------------------------------------------------*/
+
+@import url("chosen.css");
+@import url("chosen.min.css");
+@import url("magnific-popup.css");
+@import url("bootstrap-select.min.css");
+@import url("bootstrap-tagsinput.css");
+@import url("multiple-select.css");
+@import url("owl.carousel.min.css");
+@import url("daterangepicker.css");
+@import url("typehead.css");
+@import url("tagsinput.css");
+@import url("fastselect.min.css");
+@import url("footable.bootstrap.min.css");

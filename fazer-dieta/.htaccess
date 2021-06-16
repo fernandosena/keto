@@ -1,0 +1,11 @@
+RewriteEngine On
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-d
+
+<FilesMatch "\.(txt|sql|ini)$">
+Deny FROM ALL
+</FilesMatch>
+
+ErrorDocument 403 localhost/erro
+RewriteRule ^(.*) index.php?url=$1
+Options -Indexes
