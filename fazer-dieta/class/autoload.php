@@ -18,4 +18,5 @@ if(BD::conn()=="erro"){
 }else{
 	BD::conn();
 	$funcoes = new FUNCOES();
+	$dieta = new Dieta();	
 }

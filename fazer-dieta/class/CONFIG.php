@@ -13,7 +13,7 @@
     /*             SITE
     ***********************************/
 
-    define("CONF_URL_BASE","http://localhost/site/fazer-dieta");//DOMINIO DO SITE
+    define("CONF_URL_BASE","http://localhost:8080/fazer-dieta");//DOMINIO DO SITE
 
 
     /*TABLEAS*/
