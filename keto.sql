@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 18-Jun-2021 às 23:47
+-- Tempo de geração: 19-Jun-2021 às 03:16
 -- Versão do servidor: 10.4.19-MariaDB
 -- versão do PHP: 7.4.19
 
@@ -89,7 +89,15 @@ INSERT INTO `pratos` (`id`, `titulo`, `imagem`, `calorias`, `tempo_preparo`, `se
 (9, 'Frango com Prato de Couve Fresca', 'https://www.customketodiet.com/frontend/recipes/300/KZdBPqyAy4oH.png', 1041.00, 5, 1, 48.00, 91.00, 7.00),
 (10, 'Roll-ups de frutas', 'https://www.customketodiet.com/frontend/recipes/800/5FoFFBr5mfet.png', 20.00, NULL, 8, 0.25, 0.13, 2.99),
 (11, 'Repolho refogado', 'https://www.customketodiet.com/frontend/recipes/300/Q-ampheFPxql.jpg', 547.00, 130, 1, 37.10, 41.00, 7.80),
-(12, 'Keto Bacon Sushi', 'https://www.customketodiet.com/frontend/recipes/300/J906RMHHOhXr.jpg', 504.00, 10, 1, 14.70, 46.90, 5.90);
+(12, 'Keto Bacon Sushi', 'https://www.customketodiet.com/frontend/recipes/300/J906RMHHOhXr.jpg', 504.00, 10, 1, 14.70, 46.90, 5.90),
+(13, 'Brócolis e Cheddar Frittata', 'https://www.customketodiet.com/frontend/recipes/300/eAptkDVwFIFQ.jpg', 377.00, 5, 0, 24.00, 30.00, 2.00),
+(15, 'Salmão com Pesto de Manjericão Espesso', 'https://www.customketodiet.com/frontend/recipes/300/HurveSB9uT0j.jpg', 607.00, 30, 0, 38.40, 46.90, 3.90),
+(16, 'Cookies com gotas de chocolate não assados', 'https://www.customketodiet.com/frontend/recipes/300/f92ZWYCAqI4m.jpg', 272.00, NULL, 6, 5.40, 2.00, 3.60),
+(18, 'Costela Grelhada', 'https://www.customketodiet.com/frontend/recipes/300/prDD0OTqk76Y.jpg', 808.00, 25, 0, 38.10, 71.10, 3.80),
+(19, 'Mousse De Morango De Café Da Manhã', 'https://www.customketodiet.com/frontend/recipes/300/BrwwvhThOO57.jpg', 222.00, 5, 0, 18.00, 12.00, 8.00),
+(20, 'Salada de bacon e camarão rápido', 'https://www.customketodiet.com/frontend/recipes/300/B6n8jJ5ylOZL.png', 355.00, 5, 0, 32.50, 23.50, 3.30),
+(21, 'Bagas com baixo teor de carboidratos e chantilly', 'https://www.customketodiet.com/frontend/recipes/300/eE9a4sNAHvH-.png', 307.00, 15, 2, 3.00, 29.00, 6.00),
+(22, 'Tofu Scramble com curry', 'https://www.customketodiet.com/frontend/recipes/300/HhayiMttmAia.jpg', 234.00, 10, 0, 10.00, 19.00, 9.00);
 
 -- --------------------------------------------------------
 
@@ -138,7 +146,46 @@ INSERT INTO `preparacao` (`id`, `prato_id`, `etapa`, `descricao`, `imagem`) VALU
 (27, 12, 3, 'Adicione palitos de pepino no lado direito do bacon.', 'https://www.customketodiet.com/frontend/recipes/300/q_Tl3ESf86kk.jpg'),
 (28, 12, 4, 'Em seguida, adicione as cenouras.', 'https://www.customketodiet.com/frontend/recipes/300/VLCgcIPJMh6R.jpg'),
 (29, 12, 5, 'Lentamente, enrole o bacon e prenda com um palito.', 'https://www.customketodiet.com/frontend/recipes/300/_yzA4Zx0Dnez.jpg'),
-(30, 12, 6, 'Repita o mesmo procedimento com o resto das fatias de bacon. Cubra com sementes de gergelim e sirva.', 'https://www.customketodiet.com/frontend/recipes/300/UoeinGOgxse4.jpg');
+(30, 12, 6, 'Repita o mesmo procedimento com o resto das fatias de bacon. Cubra com sementes de gergelim e sirva.', 'https://www.customketodiet.com/frontend/recipes/300/UoeinGOgxse4.jpg'),
+(31, 13, 1, 'Pincele um prato resistente ao calor com manteiga.', 'https://www.customketodiet.com/frontend/recipes/300/YN8E9kbhOJ-B.jpg'),
+(32, 13, 2, 'Junte os ovos, o sal e a páprica.', 'https://www.customketodiet.com/frontend/recipes/300/eoBvkGFjgJHe.jpg'),
+(33, 13, 3, 'Misture o queijo cheddar e cubra com florzinhas de brócolis.', 'https://www.customketodiet.com/frontend/recipes/300/zHQwH4QUbBMT.jpg'),
+(34, 13, 4, 'Leve ao microondas por cerca de 3 minutos ou até que um palito inserido no meio saia limpo.', ''),
+(41, 15, 1, 'Tempere o filé de salmão com todas as especiarias e ervas.', 'https://www.customketodiet.com/frontend/recipes/300/XVbzfSy284YR.jpg'),
+(42, 15, 2, 'Aqueça uma frigideira antiaderente e adicione azeite.', 'https://www.customketodiet.com/frontend/recipes/300/4jlUR56tXSI9.jpg'),
+(43, 15, 3, 'Adicione o salmão à frigideira, com a pele primeiro. Cozinhe por alguns minutos.', 'https://www.customketodiet.com/frontend/recipes/300/uvy4HT7Sq-vl.jpg'),
+(44, 15, 4, 'Vire o salmão com cuidado e continue cozinhando até que esteja bem cozido. Deixou de lado.', 'https://www.customketodiet.com/frontend/recipes/300/K9xDnVRm9P5D.jpg'),
+(45, 15, 5, 'Para o molho: Usando um processador de alimentos, prepare todos os ingredientes.', 'https://www.customketodiet.com/frontend/recipes/300/IIq45L8F2212.jpg'),
+(46, 15, 6, 'Adicione todos os ingredientes no processador de alimentos.', 'https://www.customketodiet.com/frontend/recipes/300/WnVDNZ-TLA9u.jpg'),
+(47, 15, 7, 'Pulsar em alta até que tudo esteja picado grosseiramente, cerca de 1 minuto.', 'https://www.customketodiet.com/frontend/recipes/300/G8qpTKl3oiJy.jpg'),
+(48, 15, 8, 'Sirva o salmão com pesto e uma rodela de limão.', ''),
+(49, 16, 1, 'Combine cream cheese, manteiga, eritritol e extrato de baunilha em um processador de alimentos. Pulsar até ficar homogêneo.', 'https://www.customketodiet.com/frontend/recipes/300/vgPOi0lfUAzn.jpg'),
+(50, 16, 2, 'Adicione a farinha de amêndoa e misture até obter uma massa lisa.', 'https://www.customketodiet.com/frontend/recipes/300/ovOMlm4odT7e.png'),
+(51, 16, 3, 'Dobre as gotas de chocolate na mistura.', 'https://www.customketodiet.com/frontend/recipes/300/BsmzNJ2PFwkp.jpg'),
+(52, 16, 4, 'Divida a massa em bolas e alise suavemente até form', 'https://www.customketodiet.com/frontend/recipes/300/DSy8ig2FGwsc.jpg'),
+(53, 16, 5, 'Esfrie até estar pronto para servir.', ''),
+(54, 18, 1, 'Tempere a costela com pimenta-do-reino e sal. Esfregue toda a carne.', 'https://www.customketodiet.com/frontend/recipes/300/z_lAYcZN6hiX.jpg'),
+(55, 18, 2, 'Pré-aqueça uma assadeira em fogo médio e adicione óleo. Depois de aquecido, coloque a costela. Cozinhe por 5 minutos e vire. Cozinhe por mais 5 minutos.', 'https://www.customketodiet.com/frontend/recipes/300/BvAUa1Ml18jg.jpg'),
+(56, 18, 3, 'Aumente o fogo e cozinhe por mais 5 minutos de cada lado.', 'https://www.customketodiet.com/frontend/recipes/300/S20jDhZVQEMg.jpg'),
+(57, 18, 4, 'Nesse ínterim, combine o repolho, a cenoura e a maionese. Tempere com sal e pimenta-do-reino. Mexa para combinar.\r\n', 'https://www.customketodiet.com/frontend/recipes/300/P9Z6Zz3iLb7l.jpg'),
+(58, 18, 5, 'Sirva a carne com salada de repolho e divirta-se!', 'https://www.customketodiet.com/frontend/recipes/300/837VLQN6m8xr.jpg'),
+(59, 19, 1, 'Combine todos os ingredientes em um processador de alimentos. Misture até ficar homogêneo.', 'https://www.customketodiet.com/frontend/recipes/300/xm6UVujYX5Vs.jpg'),
+(60, 19, 2, 'Servir.', 'https://www.customketodiet.com/frontend/recipes/300/xzgeeDHDjFO3.jpg'),
+(61, 20, 1, 'Prepare todos os ingredientes.', 'https://www.customketodiet.com/frontend/recipes/300/DHiGQWL2AHIL.jpg'),
+(62, 20, 2, 'Arrume a salada, tendo como base a alface.', 'https://www.customketodiet.com/frontend/recipes/300/CPO7NsS3o5De.jpg'),
+(63, 20, 3, 'Em seguida, adicione os tomates.', 'https://www.customketodiet.com/frontend/recipes/300/PlTG8YyhaB_8.jpg'),
+(64, 20, 4, 'Adicione os camarões fritos.\r\n', 'https://www.customketodiet.com/frontend/recipes/300/q8yV6XjnNri4.jpg'),
+(65, 20, 5, 'Por último, adicione o bacon frito.', 'https://www.customketodiet.com/frontend/recipes/300/elowQZnThvyg.jpg'),
+(66, 20, 6, 'Sirva com suco de limão e azeite.', 'https://www.customketodiet.com/frontend/recipes/300/j8_cEEhT-WgL.jpg'),
+(67, 21, 1, 'Se você estiver usando frutas congeladas, deixe descongelar em temperatura ambiente. Bagas frescas também são melhores se estiverem em temperatura ambiente.', ''),
+(68, 21, 2, 'Bata o creme de leite bem macio, até formar picos macios. Não deve ficar granulado ou muito firme. Adicione a baunilha no final.', ''),
+(69, 21, 3, 'Sirva imediatamente com as frutas vermelhas.', ''),
+(70, 22, 1, 'Aqueça o azeite em uma panela.', 'https://www.customketodiet.com/frontend/recipes/300/dvWS_QsfinkS.jpg'),
+(71, 22, 2, 'Adicione o alho, pimentão e cebolinha. Refogue até ficar aromático.', 'https://www.customketodiet.com/frontend/recipes/300/qjcS-AFryZJV.jpg'),
+(72, 22, 3, 'Adicione o tofu esfarelado e mexa por 2-3 minutos.', 'https://www.customketodiet.com/frontend/recipes/300/rOnJPILDCrF9.jpg'),
+(73, 22, 4, 'Misture em pó de curry e fermento nutricional.', 'https://www.customketodiet.com/frontend/recipes/300/KIuaBX1PDpgK.jpg'),
+(74, 22, 5, 'Tempere conforme necessário com sal e pimenta.', ''),
+(75, 22, 6, 'Cubra com cebolinhas e sirva.', 'https://www.customketodiet.com/frontend/recipes/300/wxxZhvOD4DLT.jpg');
 
 -- --------------------------------------------------------
 
@@ -196,7 +243,56 @@ INSERT INTO `receitas` (`id`, `prato_id`, `descricao`) VALUES
 (37, 12, '15 g de queijo cremoso'),
 (38, 12, '15 g de queijo cremoso'),
 (39, 12, '25 g de cenouras (em palitos)'),
-(40, 12, '1 colher de chá de sementes de gergelim');
+(40, 12, '1 colher de chá de sementes de gergelim'),
+(41, 13, '3 ovos'),
+(42, 13, '1 colher de sopa de manteiga'),
+(43, 13, '0,25 xícara de queijo cheddar (ralado)'),
+(44, 13, '0,25 xícara de brócolis'),
+(45, 13, '0,36 g de páprica (beliscão)'),
+(46, 13, '0,36 g pitada de sal e pimenta'),
+(47, 15, '170 g de filé de salmão'),
+(48, 15, '1 colher de sopa de amêndoas ((para o molho))'),
+(49, 15, '1 colher de sopa de queijo parmesão ((para o molho))'),
+(50, 15, '2 colheres de sopa de azeite ((para o molho))'),
+(51, 15, '0,125 colher de chá de tomilho seco'),
+(52, 15, '0,125 colher de chá de alecrim seco'),
+(53, 15, '0,25 xícara de manjericão fresco (para o molho)'),
+(54, 15, '0,36 g pitada de sal e pimenta'),
+(55, 15, '0,36 g pitada de sal e pimenta (para o molho)'),
+(56, 15, '2 alho (para o molho)'),
+(57, 16, '224 g de queijo cremoso (amolecido)'),
+(58, 16, '112 g de manteiga (amolecida)'),
+(59, 16, '2 colheres de sopa de eritritol'),
+(60, 16, '2 colheres de chá de extrato de baunilha'),
+(61, 16, '0,6 xícara de farinha de amêndoa'),
+(62, 16, '0,5 xícara de gotas de chocolate sem açúcar'),
+(63, 18, '1 costela de porco (cortada (aberta) ao longo do osso)'),
+(64, 18, '2 colheres de sopa de cenouras (picadas)'),
+(65, 18, '0,5 colher de sopa de óleo de cozinha'),
+(66, 18, '0,5 xícara de repolho roxo (picado)'),
+(67, 18, '1,5 colher de sopa de maionese'),
+(68, 18, '0,36 g pitada de sal e pimenta'),
+(69, 19, '2 colheres de sopa de sementes de chia'),
+(70, 19, '2 colheres de chá de estévia em pó'),
+(71, 19, '1 xícara de tofu (sedoso)'),
+(72, 19, '0,5 xícara de morangos frescos (fatiados)'),
+(73, 20, '25 g de alface americana (fresca)'),
+(74, 20, '100 g de camarão (frito, sem casca)'),
+(75, 20, '2 fatias de bacon (frito, picado)'),
+(76, 20, '1 colher de chá de suco de limão (para servir)'),
+(77, 20, '1 colher de sopa de azeite (para servir)'),
+(78, 20, '0,25 xícara de tomate cereja (dividido pela metade)'),
+(79, 21, '140 g de framboesas frescas (ou mirtilos ou morangos frescos)'),
+(80, 21, '0,6 xícara de creme de leite fresco'),
+(81, 21, '0,25 colher de chá de extrato de baunilha'),
+(82, 22, '100 g de tofu (esfarelado)'),
+(83, 22, '1 alho (picado)'),
+(84, 22, '30 g de pimentão (picado)'),
+(85, 22, '15 g de chalota (em fatias finas)'),
+(86, 22, '1 colher de sopa de cebolinhas (picadas)'),
+(87, 22, '1 colher de sopa de azeite'),
+(88, 22, '1 colher de sopa de fermento nutricional'),
+(89, 22, '2 colheres de chá de curry em pó');
 
 --
 -- Índices para tabelas despejadas
@@ -243,19 +339,19 @@ ALTER TABLE `obter_dieta`
 -- AUTO_INCREMENT de tabela `pratos`
 --
 ALTER TABLE `pratos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT de tabela `preparacao`
 --
 ALTER TABLE `preparacao`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=76;
 
 --
 -- AUTO_INCREMENT de tabela `receitas`
 --
 ALTER TABLE `receitas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=90;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
