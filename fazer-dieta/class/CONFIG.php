@@ -16,8 +16,8 @@
     define("CONF_URL_BASE","http://localhost:8080/fazer-dieta");//DOMINIO DO SITE
 
 
-    /*TABLEAS*/
+    /*TABELAS*/
     define("TABLE_OBTER_DIETA", "obter_dieta");
-
-?>
-
+    define("TABLE_PRATOS", "pratos");
+    define("TABLE_PREPARACAO", "preparacao");
+    define("TABLE_RECEITAS", "receitas");

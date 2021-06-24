@@ -1,5 +1,9 @@
 <?php
 require_once("class/CONFIG.php");
+require_once("class/plano.class.php");
+
+$plano = new Plano();
+$informacoes = $plano->infos();
 ?>
 
 <!DOCTYPE html>
@@ -131,17 +135,15 @@ require_once("class/CONFIG.php");
 
 
         var profile_data = {
-            "current_weight": 80,
-            "target_weight": 69,
-            "height": 120,
-            "height_in": 4,
-            "height_ft": 5,
-            "activity_level": "Muito ativo",
-            "activity_level_val": 16,
-            "daily_calories": 2095,
-            "nutrients_breakdown": "131 - 163 - 26",
-            "water_intake": 3.5,
-            "expected_weight": 75,
+            "current_weight": <?= $informacoes['peso_atual'] ?>,
+            "target_weight": <?= $informacoes['peso_alvo'] ?>,
+            "height": <?= $informacoes['altura'] ?>,            
+            "activity_level": "<?= $informacoes['nivel_atividade'] ?>",
+            "activity_level_val": <?= $informacoes['nivel_atividade_valor'] ?>,
+            "daily_calories": <?= $informacoes['calorias_diarias'] ?>,
+            "nutrients_breakdown": "<?= $informacoes['proteina'] ?> - <?= $informacoes['gorduras'] ?> - <?= $informacoes['carboidratos'] ?>",
+            "water_intake": <?= $informacoes['ingestao_agua'] ?>,
+            "expected_weight": <?= $informacoes['peso_30_dias'] ?>,
             "imperial_metric": 0,
             "weeks": 8
         };
